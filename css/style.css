@@ -1,0 +1,371 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.visually-hidden:not(:focus):not(active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #484747;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #484747;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.sportsoft-logo {
+  width: 450px;
+  height: 150px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__item {
+  display: block;
+  padding: 0 30px;
+}
+
+.navigation__text {
+  font-size: 26px;
+  line-height: 39px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+}
+
+.navigation__text::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #44a7de;
+}
+
+.navigation__text:hover::after {
+  display: block;
+}
+
+.navigation--left {
+  margin-bottom: 48px;
+}
+
+.navigation--right {
+  margin-bottom: 38px;
+}
+
+.sportsoft-description {
+  width: 100%;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+.promo {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.promo__step {
+  position: absolute;
+  top: 50%;
+  margin-top: -70px;
+  margin-left: -150px;
+  left: 50%;
+  width: 300px;
+  height: 150px;
+  background-color: #44a7de;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo__step-lead {
+  font-size: 25px;
+  line-height: 38px;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes player-dash {
+  from {
+    stroke-dashoffset: 100000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ball-dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes cup-dash {
+  from {
+    stroke-dashoffset: 60000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes tennis-dash {
+  from {
+    stroke-dashoffset: 200000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes notebook-dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes phone-dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes shuttle-dash {
+  from {
+    stroke-dashoffset: 100000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes stick-dash {
+  from {
+    stroke-dashoffset: 100000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes basket-dash {
+  from {
+    stroke-dashoffset: 15000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.boot-skew {
+  position: absolute;
+  transform: scale(-1, 1);
+  right: 0;
+  top: 0;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: dash;
+  animation-duration: 18s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.svg-player {
+  stroke-dasharray: 100000;
+  stroke-dashoffset: 100000;
+  animation-name: player-dash;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.svg-cup {
+  position: absolute;
+  right: 50%;
+  bottom: 40px;
+  stroke-dasharray: 60000;
+  stroke-dashoffset: 60000;
+  animation-name: cup-dash;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.cup {
+  position: absolute;
+  right: 32%;
+  bottom: 10%;
+}
+
+.player {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.shuttle {
+  position: absolute;
+  left: 35%;
+  bottom: 20px;
+}
+
+.svg-tennis-girl {
+  stroke-dasharray: 200000;
+  stroke-dashoffset: 200000;
+  animation-name: tennis-dash;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.svg-notebook {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation-name: notebook-dash;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.svg-phone {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation-name: phone-dash;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.svg-shuttle {
+  stroke-dasharray: 100000;
+  stroke-dashoffset: 100000;
+  animation-name: shuttle-dash;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.svg-stick {
+  stroke-dasharray: 100000;
+  stroke-dashoffset: 100000;
+  animation-name: stick-dash;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.svg-basket {
+  stroke-dasharray: 15000;
+  stroke-dashoffset: 15000;
+  animation-name: basket-dash;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.notebook {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  transform: rotate(-20deg);
+}
+
+.phone {
+  position: absolute;
+  right: 18%;
+  top: 3%;
+  transform: rotate(-5deg);
+}
+
+.tennis {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+}
+
+.stick {
+  position: absolute;
+  right: 32%;
+  top: 5%;
+}
+
+.basket {
+  position: absolute;
+  left: 30%;
+  top: 8%;
+  transform: rotate(-30deg);
+}
