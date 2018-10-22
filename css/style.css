@@ -54,7 +54,7 @@ img {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  /*align-items: flex-end;*/
 }
 
 .sportsoft-logo {
@@ -64,6 +64,7 @@ img {
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .navigation__item {
@@ -80,7 +81,11 @@ img {
   position: relative;
 }
 
-.navigation__text::after {
+.navigation__text:hover {
+  color: #44a7de;
+}
+
+/*.navigation__text::after {
   display: none;
   content: "";
   position: absolute;
@@ -93,15 +98,15 @@ img {
 
 .navigation__text:hover::after {
   display: block;
-}
+}*/
 
-.navigation--left {
+/*.navigation--left {
   margin-bottom: 48px;
 }
 
 .navigation--right {
   margin-bottom: 38px;
-}
+}*/
 
 .sportsoft-description {
   width: 100%;
@@ -721,3 +726,60 @@ img {
   border-radius: 4px;
 }
 
+.mission {
+  width: 900px;
+  margin: 40px auto 30px auto;
+  position: relative;
+  border: 3px solid #44a7de;
+}
+
+.mission__title {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mission__title-text {
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  background-color: #ffffff;
+  font-weight: 500;
+}
+
+.mission__text {
+  padding: 30px;
+  font-size: 26px;
+  line-height: 28px;
+  margin: 0;
+  text-align: justify;
+}
+
+.company-info {
+  width: 900px;
+  margin: 0 auto 30px auto;
+  padding: 0 30px;
+}
+
+.company-info {
+  column-count: 3;
+  column-gap: 40px;
+}
+
+.company-info__item {
+  break-inside: avoid;
+}
+
+.company-info__item p {
+  margin: 0 0 15px 0;
+  font-size: 21px;
+  line-height: 23px;
+  text-align: justify;
+}
+
+.main-color {
+  color: #44a7de;
+}
