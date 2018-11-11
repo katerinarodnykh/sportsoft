@@ -1252,14 +1252,22 @@ img {
 
 .desktop__content {
   width: 760px;
-  height: 480px;
-  overflow-y: scroll;
   overflow-x: hidden;
+  background-color: #ffffff;
   border: 3px solid #44a7de;
 }
 
+.desktop__picture {
+  width: 777px;
+  height: 480px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-right: -15px;
+}
+
 .mobile__img,
-.desktop__img {
+.desktop__img,
+.tablet__img {
   display: block;
   width: 100%;
   height: auto;
@@ -1281,14 +1289,47 @@ img {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .mobile__content {
   width: 265px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  border: 3px solid #ff6a00;
+}
+
+.mobile__picture {
+  width: 277px;
   height: 420px;
   overflow-y: scroll;
   overflow-x: hidden;
-  border: 3px solid #ff6a00;
+  margin-right: -15px;
+}
+
+.tablet__window {
+  width: 800px;
+  height: 520px;
+  border: 3px solid #44a7de;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablet__content {
+  width: 760px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  border: 3px solid #44a7de;
+}
+
+.tablet__picture {
+  width: 777px;
+  height: 480px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-right: -15px;
 }
 
 .projects__section--join {
