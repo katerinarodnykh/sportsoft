@@ -936,52 +936,8 @@ img {
   display: flex;
   width: 440px;
   height: 298px;
-  border-radius: 15px;
   overflow: hidden;
-  position: relative;
-  background-color: steelblue;
-  background-blend-mode: luminosity;
   background-size: cover;
-}
-
-.project__picture:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  background-size: cover;
-  border-radius: inherit;
-  opacity: 0;
-  transition: all 0.5s;
-}
-
-.project__picture:after {
-  content: attr(data-name);
-  position: absolute;
-  top: 50%;
-  margin-top: -20px;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  font-size: 24px;
-  font-weight: 500;
-  color: #000000;
-  opacity: 1;
-  transition: all 0.7s;
-  text-align: center;
-}
-
-.project__picture:hover:after {
-  opacity: 0;
-}
-
-.project__picture:hover:before {
-  opacity: 1;
 }
 
 .project__info {
