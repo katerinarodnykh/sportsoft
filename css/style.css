@@ -52,9 +52,19 @@ img {
 .header {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
+  /*align-items: flex-end;*/
+}
+
+.submenu__item--light {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header__navigation {
   display: flex;
   justify-content: center;
-  /*align-items: flex-end;*/
 }
 
 .sportsoft-logo {
@@ -127,15 +137,15 @@ img {
 .promo__step {
   position: absolute;
   top: 50%;
-  margin-top: -70px;
+  margin-top: -48px;
   margin-left: -150px;
   left: 50%;
   width: 300px;
-  height: 150px;
+  height: 109px;
   background-color: #44a7de;
-  border-radius: 25px;
+  border-radius: 18px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 27px;
   line-height: 23px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1003,13 +1013,40 @@ img {
   line-height: 25px;
 }
 
+.contacts__item {
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+}
+
 .submenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
+  left: 75px;
+  top: 45px;
 }
 
-.submenu__list {
+.light {
+  position: absolute;
+  right: 75px;
+  top: 100px;
+  transform: rotate(180deg);
+}
+
+.light:before {
+  content: '';
+  width: 1px;
+  height: 90px;
+  position: absolute;
+  top: 22px;
+  left: -12.5px;
+  background-color: #949494;
+}
+
+.submenu__list,
+.contacts__list {
   list-style: none;
   padding: 0;
   margin: 0;
