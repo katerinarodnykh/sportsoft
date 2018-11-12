@@ -691,13 +691,6 @@ img {
   transform: rotate(45deg);
 }
 
-.join {
-  width: 900px;
-  margin: 0 auto 40px auto;
-  font-size: 17px;
-  line-height: 20px;
-}
-
 .process {
   width: 850px;
   margin: 0 auto 50px auto;
@@ -822,14 +815,14 @@ img {
   padding: 0 30px;
 }
 
-.company-info {
+/*.company-info {
   column-count: 3;
   column-gap: 40px;
 }
 
 .company-info__item {
   break-inside: avoid;
-}
+}*/
 
 .company-info__item p {
   margin: 0 0 15px 0;
@@ -1417,6 +1410,46 @@ img {
 .orange-border-mod {
   border-left: 3px solid #ff6a00;
   border-right: 3px solid #ff6a00;
+}
+
+.tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+}
+
+.tabs__link {
+  display: block;
+  padding: 5px 10px;
+  font-size: 25px;
+  line-height: 30px;
+  border: 3px solid #44a7de;
+  text-transform: uppercase;
+  margin: 20px 10px;
+}
+
+.comments {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.comments__item {
+  display: flex;
+  margin: 20px 0;
+}
+
+.comments__picture {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #44a7de;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.comments__name {
+  margin-top: 18px;
+  font-size: 25px;
 }
 
 
