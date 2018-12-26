@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-black: #22282b;
+  --dark-grey: #494747;
+  --light-blue: #44a7de; /*rgba(68, 167, 222, )*/
+  --puple: #9b47e7;
+  --yellow: #ff9600;
+}
+/* применение var(--color-blue); */
+
+.visually-hidden:not(:focus):not(active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--dark-grey);
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--white);
+}
+
+.main-container {
+  min-height: calc(100vh - 285px);
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+
+img {
+  max-width: 100%;
+}
+
+.block-container {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  border-bottom: 1px solid rgba(68, 167, 222, 0.5);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 90px;
+}
+
+.contacts {
+  list-style: none;
+}
+
+.lang {
+  display: flex;
+  list-style: none;
+}
+
+.lang__link {
+  display: block;
+  padding: 13px 15px;
+}
+
+@keyframes player-dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hockey-player {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation-name: player-dash;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-delay: 0.3s;
+}
+
+
+
