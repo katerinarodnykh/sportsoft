@@ -103,6 +103,7 @@ img {
   text-align: left;
   font-size: 18px;
   color: var(--white);
+  padding: 0;
 }
 
 .contacts--footer a {
@@ -136,7 +137,7 @@ img {
   background-image: url(../img/promo-background.png), linear-gradient(to top, var(--light-grey) 0%, var(--white) 100%);
   background-position: center top;
   background-repeat: no-repeat;
-  padding: 30px 0;
+  padding: 30px 0 60px 0;
 }
 
 .button {
@@ -186,6 +187,10 @@ img {
   color: var(--puple);
 }
 
+.icons {
+  height: 640px;
+}
+
 .icons__title {
   margin: 0;
   font-size: 20px;
@@ -198,17 +203,46 @@ img {
 .advantages {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  margin: 50px auto 0 auto;
+}
+
+.advantages__item {
+  position: relative;
+  width: calc((100% - 40px)/3);
+  height: 260px;
+}
+
+.advantages__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.advantages__icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .advantages__title {
   font-size: 30px;
+  line-height: 30px;
   font-weight: 700;
+  margin: 0;
+  text-align: center;
   text-transform: uppercase;
   color: var(--light-blue);
 }
 
 .advantages__text {
   line-height: 26px;
+  padding: 34px 70px 35px 48px;
+  margin: 0;
+}
+
+.advantages__link {
+  padding: 0 70px 0 48px;
 }
 
 .action {
