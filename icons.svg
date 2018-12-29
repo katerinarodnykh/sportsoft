@@ -1,5 +1,7 @@
-<svg style="display: none">
-    <symbol id="ejection-hockey" fill="#d94140" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 19.97"></symbol>
+<svg class="visually-hidden">
+    <symbol id="mission" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792.4 280.7">
+        <path fill="#44a7de" d="M1792.4 2.5h-666.2V5h663.7v92.8l-36.5 180.3H2.5v-95.6L38.4 5h629.4V2.5H36.3L0 182.1v98.6h1755.5l36.9-182.5V2.5z"/><circle fill="#44a7de" cx="667.5" cy="3.5" r="3.5"/><circle fill="#44a7de" cx="1125.9" cy="3.5" r="3.5"/>
+    </symbol>
 </svg>
 
 <!--Вставка <svg class="" width="" height=""><use xlink:href="/img/icons.svg#id"></use></svg>-->
