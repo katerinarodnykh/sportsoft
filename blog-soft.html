@@ -1,0 +1,72 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Sportsoft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-soft.css" rel="stylesheet">
+</head>
+<body>
+<main class="main">
+    <!--Перенести в отдельный файл, должно работать на сервере-->
+    <svg>
+        <symbol id="frame" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568.3 367.2">
+            <linearGradient id="a" x1="223.43" y1="325.7" x2="382.1" y2="-45.63" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#44a7de"/><stop offset=".51" stop-color="#9b47e7"/><stop offset="1" stop-color="#ff9600"/></linearGradient></defs><path d="M354.1 0H29.5L0 145.9v221.3h538.8l29.5-145.9V0zm211.8 220.9l-29.1 143.8H2.5V146.2l29-143.7h534.4v218.4z" fill="url(#a)"/>
+        </symbol>
+        <mask id="img-frame">
+            <use xlink:href="#frame" />
+        </mask>
+        <!--<symbol id="blog-picture">
+            <image xlink:href="img/rfs-note.png" width="380" height="247"/>
+        </symbol>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-picture"></use>-->
+    </svg>
+    <!--Вставка <svg class="" width="" height=""><use xlink:href="/img/icons.svg#id"></use></svg>-->
+    <div class="main-container">
+        <h1 class="visually-hidden">Новости SportSoft</h1>
+        <section class="blog">
+            <div class="block-container">
+                <h2 class="company__head">Блог</h2>
+                <section class="tabs">
+                    <ul class="tabs__navigation">
+                        <li class="tabs__item tabs__item--active">
+                            <a class="tabs__link" href="#">Новости</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a class="tabs__link" href="#">Публикации</a>
+                        </li>
+                    </ul>
+                    <div class="tabs__content">
+                        <div class="tabs__pane">
+                            <ul class="blog-list">
+                                <li class="blog-list__item">
+                                    <a class="blog-list__picture" href="#">
+                                        <mask id="img-frame">
+                                            <linearGradient id="a" x1="223.43" y1="325.7" x2="382.1" y2="-45.63" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#44a7de"/><stop offset=".51" stop-color="#9b47e7"/><stop offset="1" stop-color="#ff9600"/></linearGradient></defs><path d="M354.1 0H29.5L0 145.9v221.3h538.8l29.5-145.9V0zm211.8 220.9l-29.1 143.8H2.5V146.2l29-143.7h534.4v218.4z" fill="url(#a)"/>
+                                        </mask>
+                                        <svg width="380" height="247">
+                                            <g mask="url(#img-frame)">
+                                                <image xlink:href="img/rfs-note.png" width="380" height="247"/>
+                                            </g>
+                                        </svg>
+                                        <!--<img src="img/rfs-note.png" width="380">-->
+                                    </a>
+                                    <div class="news__content">
+                                        <p class="news__date">16.09.2018</p>
+                                        <a class="news__title" href="news-item.html">УЕФА номинировал на престижную премию</a>
+                                        <p class="news__lead">Очень рады и немного гордимся, что являемся частью такого масштабного проекта, который номинирован на международную премию!что являемся частью такого масштабного проекта, который номинирован на международную премию!</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+</html>
