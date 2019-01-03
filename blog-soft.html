@@ -11,20 +11,6 @@
 </head>
 <body>
 <main class="main">
-    <!--Перенести в отдельный файл, должно работать на сервере-->
-    <svg>
-        <symbol id="frame" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568.3 367.2">
-            <linearGradient id="a" x1="223.43" y1="325.7" x2="382.1" y2="-45.63" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#44a7de"/><stop offset=".51" stop-color="#9b47e7"/><stop offset="1" stop-color="#ff9600"/></linearGradient></defs><path d="M354.1 0H29.5L0 145.9v221.3h538.8l29.5-145.9V0zm211.8 220.9l-29.1 143.8H2.5V146.2l29-143.7h534.4v218.4z" fill="url(#a)"/>
-        </symbol>
-        <mask id="img-frame">
-            <use xlink:href="#frame" />
-        </mask>
-        <!--<symbol id="blog-picture">
-            <image xlink:href="img/rfs-note.png" width="380" height="247"/>
-        </symbol>
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-picture"></use>-->
-    </svg>
-    <!--Вставка <svg class="" width="" height=""><use xlink:href="/img/icons.svg#id"></use></svg>-->
     <div class="main-container">
         <h1 class="visually-hidden">Новости SportSoft</h1>
         <section class="blog">
@@ -41,18 +27,10 @@
                     </ul>
                     <div class="tabs__content">
                         <div class="tabs__pane">
-                            <ul class="blog-list">
-                                <li class="blog-list__item">
-                                    <a class="blog-list__picture" href="#">
-                                        <mask id="img-frame">
-                                            <linearGradient id="a" x1="223.43" y1="325.7" x2="382.1" y2="-45.63" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#44a7de"/><stop offset=".51" stop-color="#9b47e7"/><stop offset="1" stop-color="#ff9600"/></linearGradient></defs><path d="M354.1 0H29.5L0 145.9v221.3h538.8l29.5-145.9V0zm211.8 220.9l-29.1 143.8H2.5V146.2l29-143.7h534.4v218.4z" fill="url(#a)"/>
-                                        </mask>
-                                        <svg width="380" height="247">
-                                            <g mask="url(#img-frame)">
-                                                <image xlink:href="img/rfs-note.png" width="380" height="247"/>
-                                            </g>
-                                        </svg>
-                                        <!--<img src="img/rfs-note.png" width="380">-->
+                            <ul class="blog__list">
+                                <li class="blog__item">
+                                    <a class="blog__picture" href="#">
+                                        <img class="blog__img" src="img/rfs-note.png">
                                     </a>
                                     <div class="news__content">
                                         <p class="news__date">16.09.2018</p>

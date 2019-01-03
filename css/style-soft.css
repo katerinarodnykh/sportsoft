@@ -528,6 +528,21 @@ a.company__social {
   padding: 0 0 50px 0;
 }
 
+.blog__list {
+  list-style: none;
+}
+
+.blog__picture,
+.blog__img {
+  display: block;
+}
+
+.blog__img {
+  width: 380px;
+  height: 220px;
+  clip-path: polygon(6% 0, 100% 0, 100% 60%, 94% 100%, 0 100%, 0 40%);
+}
+
 @keyframes player-dash {
   from {
     stroke-dashoffset: 10000;
