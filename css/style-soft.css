@@ -532,14 +532,32 @@ a.company__social {
   list-style: none;
 }
 
+.blog__picture {
+  position: relative;
+}
+
+.blog__picture:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 220px;
+  top: -7px;
+  bottom: -7px;
+  right: -7px;
+  left: -7px;
+  background-image: url("../img/frame.svg");
+  background-repeat: no-repeat;
+}
+
 .blog__picture,
 .blog__img {
   display: block;
 }
 
 .blog__img {
-  width: 380px;
-  height: 220px;
+  width: 366px;
+  height: 206px;
   clip-path: polygon(6% 0, 100% 0, 100% 60%, 94% 100%, 0 100%, 0 40%);
 }
 
