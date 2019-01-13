@@ -1045,30 +1045,22 @@ a.company__social {
 /* Проект */
 
 .project {
-  width: 900px;
-  margin: 50px auto 0 auto;
+  background-image: url(../img/promo-background.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 50px 0 0 0;
 }
 
 .project__info {
-  position: relative;
-  border: 3px solid #ff6a00;
+  border: 2px solid var(--light-blue);
 }
 
 .project__title {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.project__title-text {
-  font-size: 28px;
+  font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 0 20px;
-  background-color: #ffffff;
-  font-weight: 500;
+  text-align: center;
+  margin: 0 0 45px 0;
 }
 
 .project__head {
@@ -1085,32 +1077,64 @@ a.company__social {
 }
 
 .project__info {
-  width: 440px;
-  height: 298px;
-  padding: 30px 30px 10px 30px;
+  width: 380px;
+  padding: 35px;
 }
 
 .project__item {
   font-size: 23px;
   line-height: 25px;
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
+}
+
+.project__item:last-child {
+  margin: 0;
 }
 
 .project__item span {
-  padding-right: 10px;
-  color: #000000;
-  font-weight: 600;
+  display: block;
+  color: var(--light-blue);
   font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
 }
 
 .project__link {
-  color: #44a7de;
+  color: var(--dark-gray);
+}
+
+.project__link:hover {
+  color: var(--light-blue);
+  transition: all 0.3s;
 }
 
 .project__content {
-  padding: 30px;
+  padding: 35px 0;
   font-size: 21px;
   line-height: 25px;
+}
+
+.project__content p {
+  margin: 30px 0;
+}
+
+.project .desktop {
+  margin: 0;
+  right: 0;
+}
+
+.project .desktop__window {
+  width: 785px;
+  height: 440px;
+  border: 2px solid var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.project .projects__range {
+
 }
 
 @keyframes player-dash {
