@@ -197,6 +197,20 @@ img {
   border: 7px solid var(--white);
 }
 
+.button--promo .button__link {
+  transition: all 0.5s;
+}
+
+.button:hover .button__link {
+  border: 0;
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+  transition: all 0.5s;
+}
+
+.button:hover:after {
+  display: none;
+}
+
 .button--white {
   border: 7px solid transparent;
   outline: 3px solid var(--white);
@@ -209,8 +223,17 @@ img {
   color: var(--puple);
 }
 
+.button--promo {
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  top: 50%;
+  margin-top: -40px;
+}
+
 .icons {
   height: 640px;
+  position: relative;
 }
 
 .icons__title {
@@ -219,6 +242,84 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+}
+
+@keyframes animation-dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.icons__icon {
+  position: absolute;
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation-name: animation-dash;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+}
+
+.hockey-player {
+  bottom: 0;
+  right: -60px;
+  animation-duration: 5s;
+}
+
+.football-player {
+  top: 65px;
+  left: 20px;
+  animation-duration: 4s;
+}
+
+.racket {
+  bottom: 60px;
+  left: 40px;
+  animation-duration: 14s;
+}
+
+.shuttlecock {
+  top: 50px;
+  right: 285px;
+  transform: rotate(180deg);
+  animation-duration: 18s;
+}
+
+.laptop {
+  bottom: 45px;
+  left: 325px;
+  transform: rotate(-10deg);
+  animation-duration: 6s;
+}
+
+.cup {
+  top: 120px;
+  right: 50%;
+  margin-right: -129px;
+  animation-duration: 8s;
+}
+
+.football-ball {
+  top: 135px;
+  left: 300px;
+  animation-duration: 16s;
+}
+
+.basket {
+  top: 170px;
+  right: 125px;
+  transform: rotate(-10deg);
+  animation-duration: 7s;
+}
+
+.whistle {
+  bottom: 140px;
+  right: 400px;
+  transform: rotate(50deg);
+  animation-duration: 24s;
 }
 
 .advantages {
@@ -269,6 +370,8 @@ img {
   margin-top: auto;
   height: 290px;
   background: linear-gradient(to right, var(--puple), var(--yellow));
+  position: relative;
+  overflow: hidden;
 }
 
 .action__container {
@@ -280,6 +383,52 @@ img {
 
 .button--action {
   margin: 0 auto;
+}
+
+.action__icon {
+  position: absolute;
+  left: 50%;
+}
+
+.action__shuttlecock {
+  margin-left: -650px;
+  bottom: -30px;
+  transform: rotate(180deg);
+}
+
+.action__basket {
+  margin-left: 450px;
+  bottom: 40px;
+  transform: rotate(15deg);
+}
+
+.action__football-ball {
+  margin-left: 580px;
+  top: -35px;
+}
+
+.action__whistle {
+  margin-left: -250px;
+  bottom: -20px;
+  transform: rotate(20deg);
+}
+
+.action__chess {
+  margin-left: 270px;
+  bottom: -10px;
+  transform: rotate(-15deg);
+}
+
+.action__mobile {
+  margin-left: -425px;
+  top: 10px;
+  transform: rotate(15deg);
+}
+
+.action__boot {
+  margin-left: 100px;
+  top: -53px;
+  transform: rotate(-12deg) scale(-1, 1);
 }
 
 .footer {
@@ -986,7 +1135,7 @@ a.company__social {
 }
 
 .projects__item:nth-child(3n) {
-  margin: 0 0 60px 0;
+  margin: 0 0 0 0;
 }
 
 .projects__picture {
@@ -1033,7 +1182,7 @@ a.company__social {
   font-size: 18px;
   line-height: 22px;
   color: var(--black);
-  margin: 10px 0 -15px 0;
+  margin: 10px 0 20px 0;
   text-align: center;
 }
 
@@ -1134,26 +1283,7 @@ a.company__social {
 }
 
 .project .projects__range {
-
-}
-
-@keyframes player-dash {
-  from {
-    stroke-dashoffset: 10000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.hockey-player {
-  stroke-dasharray: 10000;
-  stroke-dashoffset: 10000;
-  animation-name: player-dash;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-delay: 0.3s;
+  padding: 0 0 50px 0;
 }
 
 
