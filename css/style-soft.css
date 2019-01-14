@@ -1430,5 +1430,61 @@ a.company__social {
   transform: rotate(-45deg);
 }
 
+/* Отзывы */
+
+.comments {
+  height: 340px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+.comments__container {
+  display: flex;
+  align-items: center;
+}
+
+.comments__list {
+  margin: 0 50px;
+}
+
+.comments__item {
+  display: flex;
+}
+
+.comments__picture {
+  flex-shrink: 0;
+  margin: 0 25px 0 0;
+}
+
+.comments__img {
+  clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%);
+}
+
+.comments__name {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: var(--light-blue);
+}
+
+.comments__company {
+  color: var(--puple);
+  font-size: 20px;
+  margin: 0 0 25px 0;
+}
+
+.comments__arrow {
+  width: 50px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.comments__arrow--right {
+  text-align: right;
+}
+
+
 
 
