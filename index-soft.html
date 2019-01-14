@@ -332,7 +332,7 @@
         </section>
         <section class="slider"></section>
         <section class="action">
-            <div class="block-container action__container">
+            <div class="action__container">
                 <div class="button button--white button--action">
                     <a class="button__link" href="#">Заказать проект</a>
                 </div>
@@ -344,6 +344,76 @@
                 <svg class="action__icon action__mobile" width="151" height="160"><use xlink:href="#mobile-white"></use></svg>
                 <svg class="action__icon action__boot" width="186" height="134"><use xlink:href="#boot-white"></use></svg>
             </div>
+            <form class="form" id="" action="" method="post">
+                <button class="form__close" type="button"></button>
+                <div class="form__group">
+                    <p class="form__label">Вид</p>
+                    <div class="form__container">
+                        <label class="form__radio-label">
+                            <input class="form__radio" type="radio" value="1" name="form-option-1" checked>
+                            <span class="form__radio-indicator"></span>
+                            Сайт
+                        </label>
+                        <label class="form__radio-label">
+                            <input class="form__radio" type="radio" name="form-option-1" value="2">
+                            <span class="form__radio-indicator"></span>
+                            Мобильное приложение
+                        </label>
+                        <label class="form__radio-label">
+                            <input class="form__radio" type="radio" name="form-option-1" value="3">
+                            <span class="form__radio-indicator"></span>
+                            Система статистики
+                        </label>
+                        <label class="form__radio-label">
+                            <input class="form__radio" type="radio" name="form-option-1" value="4">
+                            <span class="form__radio-indicator"></span>
+                            CRM
+                        </label>
+                        <label class="form__radio-label">
+                            <input class="form__radio" type="radio" name="form-option-1" value="5">
+                            <span class="form__radio-indicator"></span>
+                            Другое
+                        </label>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <p class="form__label">Бюджет, тыс.руб.</p>
+                    <div class="form__container">
+                        <label class="form__radio-label">
+                            <input class="form__radio" type="radio" value="1" name="form-option-2" checked>
+                            <span class="form__radio-indicator"></span>
+                            100 - 300
+                        </label>
+                        <label class="form__radio-label">
+                            <input class="form__radio" type="radio" name="form-option-2" value="2">
+                            <span class="form__radio-indicator"></span>
+                            300 - 600
+                        </label>
+                        <label class="form__radio-label">
+                            <input class="form__radio" type="radio" name="form-option-2" value="3">
+                            <span class="form__radio-indicator"></span>
+                            > 600
+                        </label>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label for="id" class="form__label">Имя<span>*</span></label>
+                    <input type="text" id="id" class="form__input" name="" aria-required="true" aria-invalid="true" required>
+                    <!--Для ошибки и комментариев, если нужно, когда стоит required каждый браузер и так пишет подсказки-->
+                    <p class="form__error">Необходимо заполнить поле</p>
+                </div>
+                <div class="form__group">
+                    <label for="id" class="form__label">E-mail<span>*</span></label>
+                    <input type="email" id="id" class="form__input" name="" aria-required="true" aria-invalid="true" required>
+                    <p class="form__error">Необходимо заполнить поле</p>
+                </div>
+                <div class="form__group">
+                    <label for="id" class="form__label">Телефон<span>*</span></label>
+                    <input type="tel" id="id" class="form__input" name="" aria-required="true" aria-invalid="true" required>
+                    <p class="form__error">Необходимо заполнить поле</p>
+                </div>
+                <button class="form__button" type="submit">Отправить заявку</button>
+            </form>
         </section>
     </div>
     <footer class="footer">
@@ -370,5 +440,20 @@
         </div>
     </footer>
 </main>
+<script>
+    var action = document.querySelector(".button--action");
+    var form = document.querySelector(".form");
+    var close = form.querySelector(".form__close");
+
+    action.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        form.classList.add("form__show");
+    });
+
+    close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        form.classList.remove("form__show");
+    });
+</script>
 </body>
 </html>
